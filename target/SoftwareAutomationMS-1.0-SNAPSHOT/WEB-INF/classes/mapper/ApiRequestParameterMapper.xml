@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ApiRequestParameterMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ApiRequestParameter" >
+    <id column="request_parameter_id" property="requestParameterId" jdbcType="INTEGER" />
+    <result column="api_id" property="apiId" jdbcType="INTEGER" />
+    <result column="request_parameter_name" property="requestParameterName" jdbcType="VARCHAR" />
+    <result column="request_parameter_type" property="requestParameterType" jdbcType="INTEGER" />
+    <result column="request_parameter_required" property="requestParameterRequired" jdbcType="INTEGER" />
+    <result column="request_parameter_length" property="requestParameterLength" jdbcType="INTEGER" />
+    <result column="request_parameter_default_value" property="requestParameterDefaultValue" jdbcType="VARCHAR" />
+    <result column="request_parameter_desc" property="requestParameterDesc" jdbcType="VARCHAR" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    request_parameter_id, api_id, request_parameter_name, request_parameter_type, request_parameter_required, 
+    request_parameter_length, request_parameter_default_value, request_parameter_desc, 
+    create_by_user, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from api_request_parameter
+    where request_parameter_id = #{requestParameterId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from api_request_parameter
+    where request_parameter_id = #{requestParameterId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ApiRequestParameter" >
+    insert into api_request_parameter (request_parameter_id, api_id, request_parameter_name, 
+      request_parameter_type, request_parameter_required, 
+      request_parameter_length, request_parameter_default_value, 
+      request_parameter_desc, create_by_user, create_time, 
+      update_time)
+    values (#{requestParameterId,jdbcType=INTEGER}, #{apiId,jdbcType=INTEGER}, #{requestParameterName,jdbcType=VARCHAR}, 
+      #{requestParameterType,jdbcType=INTEGER}, #{requestParameterRequired,jdbcType=INTEGER}, 
+      #{requestParameterLength,jdbcType=INTEGER}, #{requestParameterDefaultValue,jdbcType=VARCHAR}, 
+      #{requestParameterDesc,jdbcType=VARCHAR}, #{createByUser,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiRequestParameter" >
+    insert into api_request_parameter
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="requestParameterId != null" >
+        request_parameter_id,
+      </if>
+      <if test="apiId != null" >
+        api_id,
+      </if>
+      <if test="requestParameterName != null" >
+        request_parameter_name,
+      </if>
+      <if test="requestParameterType != null" >
+        request_parameter_type,
+      </if>
+      <if test="requestParameterRequired != null" >
+        request_parameter_required,
+      </if>
+      <if test="requestParameterLength != null" >
+        request_parameter_length,
+      </if>
+      <if test="requestParameterDefaultValue != null" >
+        request_parameter_default_value,
+      </if>
+      <if test="requestParameterDesc != null" >
+        request_parameter_desc,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="requestParameterId != null" >
+        #{requestParameterId,jdbcType=INTEGER},
+      </if>
+      <if test="apiId != null" >
+        #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterName != null" >
+        #{requestParameterName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParameterType != null" >
+        #{requestParameterType,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterRequired != null" >
+        #{requestParameterRequired,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterLength != null" >
+        #{requestParameterLength,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterDefaultValue != null" >
+        #{requestParameterDefaultValue,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParameterDesc != null" >
+        #{requestParameterDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiRequestParameter" >
+    update api_request_parameter
+    <set >
+      <if test="apiId != null" >
+        api_id = #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterName != null" >
+        request_parameter_name = #{requestParameterName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParameterType != null" >
+        request_parameter_type = #{requestParameterType,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterRequired != null" >
+        request_parameter_required = #{requestParameterRequired,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterLength != null" >
+        request_parameter_length = #{requestParameterLength,jdbcType=INTEGER},
+      </if>
+      <if test="requestParameterDefaultValue != null" >
+        request_parameter_default_value = #{requestParameterDefaultValue,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParameterDesc != null" >
+        request_parameter_desc = #{requestParameterDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where request_parameter_id = #{requestParameterId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ApiRequestParameter" >
+    update api_request_parameter
+    set api_id = #{apiId,jdbcType=INTEGER},
+      request_parameter_name = #{requestParameterName,jdbcType=VARCHAR},
+      request_parameter_type = #{requestParameterType,jdbcType=INTEGER},
+      request_parameter_required = #{requestParameterRequired,jdbcType=INTEGER},
+      request_parameter_length = #{requestParameterLength,jdbcType=INTEGER},
+      request_parameter_default_value = #{requestParameterDefaultValue,jdbcType=VARCHAR},
+      request_parameter_desc = #{requestParameterDesc,jdbcType=VARCHAR},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where request_parameter_id = #{requestParameterId,jdbcType=INTEGER}
+  </update>
+</mapper>

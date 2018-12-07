@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ProjectModuleMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ProjectModule" >
+    <id column="project_module_id" property="projectModuleId" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="module_name" property="moduleName" jdbcType="VARCHAR" />
+    <result column="module_desc" property="moduleDesc" jdbcType="VARCHAR" />
+    <result column="module_father" property="moduleFather" jdbcType="INTEGER" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    project_module_id, project_id, module_name, module_desc, module_father, create_by_user, 
+    create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from project_module
+    where project_module_id = #{projectModuleId,jdbcType=INTEGER}
+  </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from project_module
+    where project_module_id = #{projectModuleId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ProjectModule" >
+    insert into project_module (project_module_id, project_id, module_name, 
+      module_desc, module_father, create_by_user, 
+      create_time, update_time)
+    values (#{projectModuleId,jdbcType=INTEGER}, #{projectId,jdbcType=INTEGER}, #{moduleName,jdbcType=VARCHAR}, 
+      #{moduleDesc,jdbcType=VARCHAR}, #{moduleFather,jdbcType=INTEGER}, #{createByUser,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ProjectModule" >
+    insert into project_module
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="projectModuleId != null" >
+        project_module_id,
+      </if>
+      <if test="projectId != null" >
+        project_id,
+      </if>
+      <if test="moduleName != null" >
+        module_name,
+      </if>
+      <if test="moduleDesc != null" >
+        module_desc,
+      </if>
+      <if test="moduleFather != null" >
+        module_father,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="projectModuleId != null" >
+        #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="moduleName != null" >
+        #{moduleName,jdbcType=VARCHAR},
+      </if>
+      <if test="moduleDesc != null" >
+        #{moduleDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="moduleFather != null" >
+        #{moduleFather,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ProjectModule" >
+    update project_module
+    <set >
+      <if test="projectId != null" >
+        project_id = #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="moduleName != null" >
+        module_name = #{moduleName,jdbcType=VARCHAR},
+      </if>
+      <if test="moduleDesc != null" >
+        module_desc = #{moduleDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="moduleFather != null" >
+        module_father = #{moduleFather,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where project_module_id = #{projectModuleId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ProjectModule" >
+    update project_module
+    set project_id = #{projectId,jdbcType=INTEGER},
+      module_name = #{moduleName,jdbcType=VARCHAR},
+      module_desc = #{moduleDesc,jdbcType=VARCHAR},
+      module_father = #{moduleFather,jdbcType=INTEGER},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where project_module_id = #{projectModuleId,jdbcType=INTEGER}
+  </update>
+  <select id="getAllProjectModuleByProjectId"
+          parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    project_module
+    where
+    project_id in
+    <foreach close=")" collection="projectIdList" index="index" item="projectId" open="(" separator=",">
+      #{projectId,jdbcType=INTEGER}
+    </foreach>
+    and module_father != ''
+  </select>
+</mapper>

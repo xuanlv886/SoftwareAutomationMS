@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.BugManagementDetailMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.BugManagementDetail" >
+    <id column="bug_management_detail_id" property="bugManagementDetailId" jdbcType="INTEGER" />
+    <result column="bug_id" property="bugId" jdbcType="INTEGER" />
+    <result column="bug_maker" property="bugMaker" jdbcType="INTEGER" />
+    <result column="bug_maker_apply_time" property="bugMakerApplyTime" jdbcType="TIMESTAMP" />
+    <result column="bug_fixed_time" property="bugFixedTime" jdbcType="TIMESTAMP" />
+    <result column="bug_actual_fixed_time" property="bugActualFixedTime" jdbcType="TIMESTAMP" />
+    <result column="bug_retester" property="bugRetester" jdbcType="INTEGER" />
+    <result column="bug_retest_time" property="bugRetestTime" jdbcType="TIMESTAMP" />
+    <result column="bug_retest_over_time" property="bugRetestOverTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bug_management_detail_id, bug_id, bug_maker, bug_maker_apply_time, bug_fixed_time, 
+    bug_actual_fixed_time, bug_retester, bug_retest_time, bug_retest_over_time, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bug_management_detail
+    where bug_management_detail_id = #{bugManagementDetailId,jdbcType=INTEGER}
+  </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bug_management_detail
+    where bug_management_detail_id = #{bugManagementDetailId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.BugManagementDetail" >
+    insert into bug_management_detail (bug_management_detail_id, bug_id, bug_maker, 
+      bug_maker_apply_time, bug_fixed_time, bug_actual_fixed_time, 
+      bug_retester, bug_retest_time, bug_retest_over_time, 
+      create_time)
+    values (#{bugManagementDetailId,jdbcType=INTEGER}, #{bugId,jdbcType=INTEGER}, #{bugMaker,jdbcType=INTEGER}, 
+      #{bugMakerApplyTime,jdbcType=TIMESTAMP}, #{bugFixedTime,jdbcType=TIMESTAMP}, #{bugActualFixedTime,jdbcType=TIMESTAMP}, 
+      #{bugRetester,jdbcType=INTEGER}, #{bugRetestTime,jdbcType=TIMESTAMP}, #{bugRetestOverTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.BugManagementDetail" >
+    insert into bug_management_detail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bugManagementDetailId != null" >
+        bug_management_detail_id,
+      </if>
+      <if test="bugId != null" >
+        bug_id,
+      </if>
+      <if test="bugMaker != null" >
+        bug_maker,
+      </if>
+      <if test="bugMakerApplyTime != null" >
+        bug_maker_apply_time,
+      </if>
+      <if test="bugFixedTime != null" >
+        bug_fixed_time,
+      </if>
+      <if test="bugActualFixedTime != null" >
+        bug_actual_fixed_time,
+      </if>
+      <if test="bugRetester != null" >
+        bug_retester,
+      </if>
+      <if test="bugRetestTime != null" >
+        bug_retest_time,
+      </if>
+      <if test="bugRetestOverTime != null" >
+        bug_retest_over_time,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bugManagementDetailId != null" >
+        #{bugManagementDetailId,jdbcType=INTEGER},
+      </if>
+      <if test="bugId != null" >
+        #{bugId,jdbcType=INTEGER},
+      </if>
+      <if test="bugMaker != null" >
+        #{bugMaker,jdbcType=INTEGER},
+      </if>
+      <if test="bugMakerApplyTime != null" >
+        #{bugMakerApplyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugFixedTime != null" >
+        #{bugFixedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugActualFixedTime != null" >
+        #{bugActualFixedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugRetester != null" >
+        #{bugRetester,jdbcType=INTEGER},
+      </if>
+      <if test="bugRetestTime != null" >
+        #{bugRetestTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugRetestOverTime != null" >
+        #{bugRetestOverTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.BugManagementDetail" >
+    update bug_management_detail
+    <set >
+      <if test="bugId != null" >
+        bug_id = #{bugId,jdbcType=INTEGER},
+      </if>
+      <if test="bugMaker != null" >
+        bug_maker = #{bugMaker,jdbcType=INTEGER},
+      </if>
+      <if test="bugMakerApplyTime != null" >
+        bug_maker_apply_time = #{bugMakerApplyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugFixedTime != null" >
+        bug_fixed_time = #{bugFixedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugActualFixedTime != null" >
+        bug_actual_fixed_time = #{bugActualFixedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugRetester != null" >
+        bug_retester = #{bugRetester,jdbcType=INTEGER},
+      </if>
+      <if test="bugRetestTime != null" >
+        bug_retest_time = #{bugRetestTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bugRetestOverTime != null" >
+        bug_retest_over_time = #{bugRetestOverTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where bug_management_detail_id = #{bugManagementDetailId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.BugManagementDetail" >
+    update bug_management_detail
+    set bug_id = #{bugId,jdbcType=INTEGER},
+      bug_maker = #{bugMaker,jdbcType=INTEGER},
+      bug_maker_apply_time = #{bugMakerApplyTime,jdbcType=TIMESTAMP},
+      bug_fixed_time = #{bugFixedTime,jdbcType=TIMESTAMP},
+      bug_actual_fixed_time = #{bugActualFixedTime,jdbcType=TIMESTAMP},
+      bug_retester = #{bugRetester,jdbcType=INTEGER},
+      bug_retest_time = #{bugRetestTime,jdbcType=TIMESTAMP},
+      bug_retest_over_time = #{bugRetestOverTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where bug_management_detail_id = #{bugManagementDetailId,jdbcType=INTEGER}
+  </update>
+  <select id="getAllBugByUserId" parameterType="java.util.List" resultType="java.lang.Integer">
+    select count(distinct bug_id)
+    from bug_management_detail
+    where bug_maker = #{userId,jdbcType=INTEGER}
+    and bug_id in
+    <foreach close=")" collection="bugIdList" index="index" item="bugId" open="(" separator=",">
+      #{bugId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+</mapper>

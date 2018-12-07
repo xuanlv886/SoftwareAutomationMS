@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ApiHeaderRelationMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ApiHeaderRelation" >
+    <id column="api_header_relation_id" property="apiHeaderRelationId" jdbcType="INTEGER" />
+    <result column="api_id" property="apiId" jdbcType="INTEGER" />
+    <result column="header_id" property="headerId" jdbcType="INTEGER" />
+    <result column="api_header_content" property="apiHeaderContent" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    api_header_relation_id, api_id, header_id, api_header_content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from api_header_relation
+    where api_header_relation_id = #{apiHeaderRelationId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from api_header_relation
+    where api_header_relation_id = #{apiHeaderRelationId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ApiHeaderRelation" >
+    insert into api_header_relation (api_header_relation_id, api_id, header_id, 
+      api_header_content)
+    values (#{apiHeaderRelationId,jdbcType=INTEGER}, #{apiId,jdbcType=INTEGER}, #{headerId,jdbcType=INTEGER}, 
+      #{apiHeaderContent,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiHeaderRelation" >
+    insert into api_header_relation
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="apiHeaderRelationId != null" >
+        api_header_relation_id,
+      </if>
+      <if test="apiId != null" >
+        api_id,
+      </if>
+      <if test="headerId != null" >
+        header_id,
+      </if>
+      <if test="apiHeaderContent != null" >
+        api_header_content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="apiHeaderRelationId != null" >
+        #{apiHeaderRelationId,jdbcType=INTEGER},
+      </if>
+      <if test="apiId != null" >
+        #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="headerId != null" >
+        #{headerId,jdbcType=INTEGER},
+      </if>
+      <if test="apiHeaderContent != null" >
+        #{apiHeaderContent,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiHeaderRelation" >
+    update api_header_relation
+    <set >
+      <if test="apiId != null" >
+        api_id = #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="headerId != null" >
+        header_id = #{headerId,jdbcType=INTEGER},
+      </if>
+      <if test="apiHeaderContent != null" >
+        api_header_content = #{apiHeaderContent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where api_header_relation_id = #{apiHeaderRelationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ApiHeaderRelation" >
+    update api_header_relation
+    set api_id = #{apiId,jdbcType=INTEGER},
+      header_id = #{headerId,jdbcType=INTEGER},
+      api_header_content = #{apiHeaderContent,jdbcType=VARCHAR}
+    where api_header_relation_id = #{apiHeaderRelationId,jdbcType=INTEGER}
+  </update>
+</mapper>

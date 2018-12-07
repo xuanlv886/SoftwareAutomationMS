@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.BugManagementMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.BugManagement" >
+    <id column="bug_id" property="bugId" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="project_module_id" property="projectModuleId" jdbcType="INTEGER" />
+    <result column="bug_level_id" property="bugLevelId" jdbcType="INTEGER" />
+    <result column="bug_priority_id" property="bugPriorityId" jdbcType="INTEGER" />
+    <result column="bug_presenter" property="bugPresenter" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="plan_id" property="planId" jdbcType="INTEGER" />
+    <result column="bug_title" property="bugTitle" jdbcType="VARCHAR" />
+    <result column="bug_desc" property="bugDesc" jdbcType="VARCHAR" />
+    <result column="bug_status" property="bugStatus" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bug_id, project_id, project_module_id, bug_level_id, bug_priority_id, bug_presenter, 
+    create_time, update_time, plan_id, bug_title, bug_desc, bug_status
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bug_management
+    where bug_id = #{bugId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bug_management
+    where bug_id = #{bugId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.BugManagement" >
+    insert into bug_management (bug_id, project_id, project_module_id, 
+      bug_level_id, bug_priority_id, bug_presenter, 
+      create_time, update_time, plan_id, 
+      bug_title, bug_desc, bug_status
+      )
+    values (#{bugId,jdbcType=INTEGER}, #{projectId,jdbcType=INTEGER}, #{projectModuleId,jdbcType=INTEGER}, 
+      #{bugLevelId,jdbcType=INTEGER}, #{bugPriorityId,jdbcType=INTEGER}, #{bugPresenter,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{planId,jdbcType=INTEGER}, 
+      #{bugTitle,jdbcType=VARCHAR}, #{bugDesc,jdbcType=VARCHAR}, #{bugStatus,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.BugManagement" >
+    insert into bug_management
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bugId != null" >
+        bug_id,
+      </if>
+      <if test="projectId != null" >
+        project_id,
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id,
+      </if>
+      <if test="bugLevelId != null" >
+        bug_level_id,
+      </if>
+      <if test="bugPriorityId != null" >
+        bug_priority_id,
+      </if>
+      <if test="bugPresenter != null" >
+        bug_presenter,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="planId != null" >
+        plan_id,
+      </if>
+      <if test="bugTitle != null" >
+        bug_title,
+      </if>
+      <if test="bugDesc != null" >
+        bug_desc,
+      </if>
+      <if test="bugStatus != null" >
+        bug_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bugId != null" >
+        #{bugId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="bugLevelId != null" >
+        #{bugLevelId,jdbcType=INTEGER},
+      </if>
+      <if test="bugPriorityId != null" >
+        #{bugPriorityId,jdbcType=INTEGER},
+      </if>
+      <if test="bugPresenter != null" >
+        #{bugPresenter,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="planId != null" >
+        #{planId,jdbcType=INTEGER},
+      </if>
+      <if test="bugTitle != null" >
+        #{bugTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bugDesc != null" >
+        #{bugDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="bugStatus != null" >
+        #{bugStatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.BugManagement" >
+    update bug_management
+    <set >
+      <if test="projectId != null" >
+        project_id = #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="bugLevelId != null" >
+        bug_level_id = #{bugLevelId,jdbcType=INTEGER},
+      </if>
+      <if test="bugPriorityId != null" >
+        bug_priority_id = #{bugPriorityId,jdbcType=INTEGER},
+      </if>
+      <if test="bugPresenter != null" >
+        bug_presenter = #{bugPresenter,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="planId != null" >
+        plan_id = #{planId,jdbcType=INTEGER},
+      </if>
+      <if test="bugTitle != null" >
+        bug_title = #{bugTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bugDesc != null" >
+        bug_desc = #{bugDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="bugStatus != null" >
+        bug_status = #{bugStatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where bug_id = #{bugId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.BugManagement" >
+    update bug_management
+    set project_id = #{projectId,jdbcType=INTEGER},
+      project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      bug_level_id = #{bugLevelId,jdbcType=INTEGER},
+      bug_priority_id = #{bugPriorityId,jdbcType=INTEGER},
+      bug_presenter = #{bugPresenter,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      plan_id = #{planId,jdbcType=INTEGER},
+      bug_title = #{bugTitle,jdbcType=VARCHAR},
+      bug_desc = #{bugDesc,jdbcType=VARCHAR},
+      bug_status = #{bugStatus,jdbcType=INTEGER}
+    where bug_id = #{bugId,jdbcType=INTEGER}
+  </update>
+  <select id="getTotalBugCount" resultType="java.lang.Integer">
+    select count(bug_id)
+    from bug_management
+    where project_id = #{projectId,jdbcType=INTEGER}
+  </select>
+  <select id="getUnCompleteBugCount" resultType="java.lang.Integer">
+    select count(bug_id)
+    from bug_management
+    where project_id = #{projectId,jdbcType=INTEGER}
+      and bug_status != #{processed,jdbcType=INTEGER}
+  </select>
+  <select id="getYesterdayCompleteBugCount" resultType="java.lang.Integer">
+    select count(bug_id)
+    from bug_management
+    where project_id = #{projectId,jdbcType=INTEGER}
+    and bug_status = #{processed,jdbcType=INTEGER}
+    and TO_DAYS(NOW()) - TO_DAYS(update_time) = 1
+  </select>
+  <select id="getAllUnprocessedBugCount" resultType="java.lang.Integer">
+    select count(bug_id)
+    from bug_management
+    where bug_status != #{processed,jdbcType=INTEGER}
+  </select>
+  <select id="getAllBugCountByStatus" resultType="java.lang.Integer">
+    select count(bug_id)
+    from bug_management
+    where bug_status = #{bugStatus,jdbcType=INTEGER}
+  </select>
+  <select id="getAllProcessingBug" parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from  bug_management
+    where bug_status not in (0, 5)
+    and project_id in
+    <foreach close=")" collection="projectIdList" index="index" item="projectId" open="(" separator=",">
+      #{projectId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+  <select id="getAllProcessingBugWithNewAdd" parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from  bug_management
+    where bug_status != 5
+    and project_id in
+    <foreach close=")" collection="projectIdList" index="index" item="projectId" open="(" separator=",">
+      #{projectId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+  <select id="getAllWaitRetestBug" parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from  bug_management
+    where bug_status = 4
+    and project_id in
+    <foreach close=")" collection="projectIdList" index="index" item="projectId" open="(" separator=",">
+      #{projectId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+</mapper>

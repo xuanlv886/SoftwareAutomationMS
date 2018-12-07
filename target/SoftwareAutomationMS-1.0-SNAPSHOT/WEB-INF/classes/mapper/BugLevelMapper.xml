@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.BugLevelMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.BugLevel" >
+    <id column="bug_level_id" property="bugLevelId" jdbcType="INTEGER" />
+    <result column="bug_level_name" property="bugLevelName" jdbcType="VARCHAR" />
+    <result column="bug_level_desc" property="bugLevelDesc" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bug_level_id, bug_level_name, bug_level_desc
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bug_level
+    where bug_level_id = #{bugLevelId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bug_level
+    where bug_level_id = #{bugLevelId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.BugLevel" >
+    insert into bug_level (bug_level_id, bug_level_name, bug_level_desc
+      )
+    values (#{bugLevelId,jdbcType=INTEGER}, #{bugLevelName,jdbcType=VARCHAR}, #{bugLevelDesc,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.BugLevel" >
+    insert into bug_level
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bugLevelId != null" >
+        bug_level_id,
+      </if>
+      <if test="bugLevelName != null" >
+        bug_level_name,
+      </if>
+      <if test="bugLevelDesc != null" >
+        bug_level_desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bugLevelId != null" >
+        #{bugLevelId,jdbcType=INTEGER},
+      </if>
+      <if test="bugLevelName != null" >
+        #{bugLevelName,jdbcType=VARCHAR},
+      </if>
+      <if test="bugLevelDesc != null" >
+        #{bugLevelDesc,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.BugLevel" >
+    update bug_level
+    <set >
+      <if test="bugLevelName != null" >
+        bug_level_name = #{bugLevelName,jdbcType=VARCHAR},
+      </if>
+      <if test="bugLevelDesc != null" >
+        bug_level_desc = #{bugLevelDesc,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where bug_level_id = #{bugLevelId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.BugLevel" >
+    update bug_level
+    set bug_level_name = #{bugLevelName,jdbcType=VARCHAR},
+      bug_level_desc = #{bugLevelDesc,jdbcType=VARCHAR}
+    where bug_level_id = #{bugLevelId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.TestPlanUserRelationMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.TestPlanUserRelation" >
+    <id column="plan_user_relation_id" property="planUserRelationId" jdbcType="INTEGER" />
+    <result column="plan_id" property="planId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="plan_actual_result" property="planActualResult" jdbcType="INTEGER" />
+    <result column="plan_feedback" property="planFeedback" jdbcType="VARCHAR" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    plan_user_relation_id, plan_id, user_id, plan_actual_result, plan_feedback, create_by_user, 
+    create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from test_plan_user_relation
+    where plan_user_relation_id = #{planUserRelationId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from test_plan_user_relation
+    where plan_user_relation_id = #{planUserRelationId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanUserRelation" >
+    insert into test_plan_user_relation (plan_user_relation_id, plan_id, user_id, 
+      plan_actual_result, plan_feedback, create_by_user, 
+      create_time, update_time)
+    values (#{planUserRelationId,jdbcType=INTEGER}, #{planId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{planActualResult,jdbcType=INTEGER}, #{planFeedback,jdbcType=VARCHAR}, #{createByUser,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanUserRelation" >
+    insert into test_plan_user_relation
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="planUserRelationId != null" >
+        plan_user_relation_id,
+      </if>
+      <if test="planId != null" >
+        plan_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="planActualResult != null" >
+        plan_actual_result,
+      </if>
+      <if test="planFeedback != null" >
+        plan_feedback,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="planUserRelationId != null" >
+        #{planUserRelationId,jdbcType=INTEGER},
+      </if>
+      <if test="planId != null" >
+        #{planId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="planActualResult != null" >
+        #{planActualResult,jdbcType=INTEGER},
+      </if>
+      <if test="planFeedback != null" >
+        #{planFeedback,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanUserRelation" >
+    update test_plan_user_relation
+    <set >
+      <if test="planId != null" >
+        plan_id = #{planId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="planActualResult != null" >
+        plan_actual_result = #{planActualResult,jdbcType=INTEGER},
+      </if>
+      <if test="planFeedback != null" >
+        plan_feedback = #{planFeedback,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where plan_user_relation_id = #{planUserRelationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanUserRelation" >
+    update test_plan_user_relation
+    set plan_id = #{planId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      plan_actual_result = #{planActualResult,jdbcType=INTEGER},
+      plan_feedback = #{planFeedback,jdbcType=VARCHAR},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where plan_user_relation_id = #{planUserRelationId,jdbcType=INTEGER}
+  </update>
+  <select id="getTotalTestPlan" parameterType="java.util.List" resultType="java.lang.Integer">
+    select
+    count(distinct plan_id)
+    from
+    test_plan_user_relation
+    where
+    plan_id in
+    <foreach close=")" collection="planIdList" index="index" item="planId" open="(" separator=",">
+      #{planId,jdbcType=INTEGER}
+    </foreach>
+    and plan_actual_result != #{abandoned,jdbcType=INTEGER}
+  </select>
+  <select id="getYesterdayCompleteTestPlan" parameterType="java.util.List" resultType="java.lang.Integer">
+    select
+    count(distinct plan_id)
+    from
+    test_plan_user_relation
+    where
+    plan_id in
+    <foreach close=")" collection="planIdList" index="index" item="planId" open="(" separator=",">
+      #{planId,jdbcType=INTEGER}
+    </foreach>
+    and plan_actual_result in (#{activated,jdbcType=INTEGER},
+    #{pass,jdbcType=INTEGER})
+    and TO_DAYS(NOW()) - TO_DAYS(update_time) = 1
+  </select>
+  <select id="getAllTestPlanByStatus" resultType="java.lang.Integer">
+    select
+           count(distinct plan_id)
+    from test_plan_user_relation
+    where plan_actual_result = #{status,jdbcType=INTEGER}
+  </select>
+  <select id="getAllTestPlanByUserIdAndPlanIdList" parameterType="java.util.List" resultType="java.lang.Integer">
+    select
+           count(plan_user_relation_id)
+    from test_plan_user_relation
+    where user_id = #{userId,jdbcType=INTEGER}
+    and plan_id in
+    <foreach close=")" collection="planIdList" index="index" item="planId" open="(" separator=",">
+      #{planId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+  <select id="getTestPlanByUserIdAndPlanIdListAndStatus" parameterType="java.util.List" resultType="java.lang.Integer">
+    select
+    count(plan_user_relation_id)
+    from test_plan_user_relation
+    where user_id = #{userId,jdbcType=INTEGER}
+    and plan_id in
+    <foreach close=")" collection="planIdList" index="index" item="planId" open="(" separator=",">
+      #{planId,jdbcType=INTEGER}
+    </foreach>
+    and plan_actual_result = #{status,jdbcType=INTEGER}
+  </select>
+</mapper>

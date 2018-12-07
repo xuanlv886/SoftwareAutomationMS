@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.SystemOperationLogDetailMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetail" >
+    <id column="operation_log_detail_id" property="operationLogDetailId" jdbcType="INTEGER" />
+    <result column="operation_log_id" property="operationLogId" jdbcType="INTEGER" />
+    <result column="field_id" property="fieldId" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetailWithBLOBs" extends="BaseResultMap" >
+    <result column="operated_key_old_value" property="operatedKeyOldValue" jdbcType="LONGVARCHAR" />
+    <result column="operated_key_now_value" property="operatedKeyNowValue" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    operation_log_detail_id, operation_log_id, field_id
+  </sql>
+  <sql id="Blob_Column_List" >
+    operated_key_old_value, operated_key_now_value
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from system_operation_log_detail
+    where operation_log_detail_id = #{operationLogDetailId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from system_operation_log_detail
+    where operation_log_detail_id = #{operationLogDetailId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetailWithBLOBs" >
+    insert into system_operation_log_detail (operation_log_detail_id, operation_log_id, 
+      field_id, operated_key_old_value, operated_key_now_value
+      )
+    values (#{operationLogDetailId,jdbcType=INTEGER}, #{operationLogId,jdbcType=INTEGER}, 
+      #{fieldId,jdbcType=INTEGER}, #{operatedKeyOldValue,jdbcType=LONGVARCHAR}, #{operatedKeyNowValue,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetailWithBLOBs" >
+    insert into system_operation_log_detail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="operationLogDetailId != null" >
+        operation_log_detail_id,
+      </if>
+      <if test="operationLogId != null" >
+        operation_log_id,
+      </if>
+      <if test="fieldId != null" >
+        field_id,
+      </if>
+      <if test="operatedKeyOldValue != null" >
+        operated_key_old_value,
+      </if>
+      <if test="operatedKeyNowValue != null" >
+        operated_key_now_value,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="operationLogDetailId != null" >
+        #{operationLogDetailId,jdbcType=INTEGER},
+      </if>
+      <if test="operationLogId != null" >
+        #{operationLogId,jdbcType=INTEGER},
+      </if>
+      <if test="fieldId != null" >
+        #{fieldId,jdbcType=INTEGER},
+      </if>
+      <if test="operatedKeyOldValue != null" >
+        #{operatedKeyOldValue,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="operatedKeyNowValue != null" >
+        #{operatedKeyNowValue,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetailWithBLOBs" >
+    update system_operation_log_detail
+    <set >
+      <if test="operationLogId != null" >
+        operation_log_id = #{operationLogId,jdbcType=INTEGER},
+      </if>
+      <if test="fieldId != null" >
+        field_id = #{fieldId,jdbcType=INTEGER},
+      </if>
+      <if test="operatedKeyOldValue != null" >
+        operated_key_old_value = #{operatedKeyOldValue,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="operatedKeyNowValue != null" >
+        operated_key_now_value = #{operatedKeyNowValue,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where operation_log_detail_id = #{operationLogDetailId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetailWithBLOBs" >
+    update system_operation_log_detail
+    set operation_log_id = #{operationLogId,jdbcType=INTEGER},
+      field_id = #{fieldId,jdbcType=INTEGER},
+      operated_key_old_value = #{operatedKeyOldValue,jdbcType=LONGVARCHAR},
+      operated_key_now_value = #{operatedKeyNowValue,jdbcType=LONGVARCHAR}
+    where operation_log_detail_id = #{operationLogDetailId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.SystemOperationLogDetail" >
+    update system_operation_log_detail
+    set operation_log_id = #{operationLogId,jdbcType=INTEGER},
+      field_id = #{fieldId,jdbcType=INTEGER}
+    where operation_log_detail_id = #{operationLogDetailId,jdbcType=INTEGER}
+  </update>
+</mapper>

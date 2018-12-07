@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ProjectDocsMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ProjectDocs" >
+    <id column="project_doc_id" property="projectDocId" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="project_doc_name" property="projectDocName" jdbcType="VARCHAR" />
+    <result column="project_doc_address" property="projectDocAddress" jdbcType="VARCHAR" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    project_doc_id, project_id, project_doc_name, project_doc_address, create_by_user, 
+    create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from project_docs
+    where project_doc_id = #{projectDocId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from project_docs
+    where project_doc_id = #{projectDocId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ProjectDocs" >
+    insert into project_docs (project_doc_id, project_id, project_doc_name, 
+      project_doc_address, create_by_user, create_time, 
+      update_time)
+    values (#{projectDocId,jdbcType=INTEGER}, #{projectId,jdbcType=INTEGER}, #{projectDocName,jdbcType=VARCHAR}, 
+      #{projectDocAddress,jdbcType=VARCHAR}, #{createByUser,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ProjectDocs" >
+    insert into project_docs
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="projectDocId != null" >
+        project_doc_id,
+      </if>
+      <if test="projectId != null" >
+        project_id,
+      </if>
+      <if test="projectDocName != null" >
+        project_doc_name,
+      </if>
+      <if test="projectDocAddress != null" >
+        project_doc_address,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="projectDocId != null" >
+        #{projectDocId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectDocName != null" >
+        #{projectDocName,jdbcType=VARCHAR},
+      </if>
+      <if test="projectDocAddress != null" >
+        #{projectDocAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ProjectDocs" >
+    update project_docs
+    <set >
+      <if test="projectId != null" >
+        project_id = #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectDocName != null" >
+        project_doc_name = #{projectDocName,jdbcType=VARCHAR},
+      </if>
+      <if test="projectDocAddress != null" >
+        project_doc_address = #{projectDocAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where project_doc_id = #{projectDocId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ProjectDocs" >
+    update project_docs
+    set project_id = #{projectId,jdbcType=INTEGER},
+      project_doc_name = #{projectDocName,jdbcType=VARCHAR},
+      project_doc_address = #{projectDocAddress,jdbcType=VARCHAR},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where project_doc_id = #{projectDocId,jdbcType=INTEGER}
+  </update>
+</mapper>

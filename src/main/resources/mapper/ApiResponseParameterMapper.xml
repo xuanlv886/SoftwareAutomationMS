@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ApiResponseParameterMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ApiResponseParameter" >
+    <id column="response_parameter_id" property="responseParameterId" jdbcType="INTEGER" />
+    <result column="api_id" property="apiId" jdbcType="INTEGER" />
+    <result column="response_parameter_name" property="responseParameterName" jdbcType="VARCHAR" />
+    <result column="response_parameter_type" property="responseParameterType" jdbcType="INTEGER" />
+    <result column="response_parameter_desc" property="responseParameterDesc" jdbcType="VARCHAR" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    response_parameter_id, api_id, response_parameter_name, response_parameter_type, 
+    response_parameter_desc, create_by_user, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from api_response_parameter
+    where response_parameter_id = #{responseParameterId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from api_response_parameter
+    where response_parameter_id = #{responseParameterId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ApiResponseParameter" >
+    insert into api_response_parameter (response_parameter_id, api_id, response_parameter_name, 
+      response_parameter_type, response_parameter_desc, 
+      create_by_user, create_time, update_time
+      )
+    values (#{responseParameterId,jdbcType=INTEGER}, #{apiId,jdbcType=INTEGER}, #{responseParameterName,jdbcType=VARCHAR}, 
+      #{responseParameterType,jdbcType=INTEGER}, #{responseParameterDesc,jdbcType=VARCHAR}, 
+      #{createByUser,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiResponseParameter" >
+    insert into api_response_parameter
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="responseParameterId != null" >
+        response_parameter_id,
+      </if>
+      <if test="apiId != null" >
+        api_id,
+      </if>
+      <if test="responseParameterName != null" >
+        response_parameter_name,
+      </if>
+      <if test="responseParameterType != null" >
+        response_parameter_type,
+      </if>
+      <if test="responseParameterDesc != null" >
+        response_parameter_desc,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="responseParameterId != null" >
+        #{responseParameterId,jdbcType=INTEGER},
+      </if>
+      <if test="apiId != null" >
+        #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="responseParameterName != null" >
+        #{responseParameterName,jdbcType=VARCHAR},
+      </if>
+      <if test="responseParameterType != null" >
+        #{responseParameterType,jdbcType=INTEGER},
+      </if>
+      <if test="responseParameterDesc != null" >
+        #{responseParameterDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ApiResponseParameter" >
+    update api_response_parameter
+    <set >
+      <if test="apiId != null" >
+        api_id = #{apiId,jdbcType=INTEGER},
+      </if>
+      <if test="responseParameterName != null" >
+        response_parameter_name = #{responseParameterName,jdbcType=VARCHAR},
+      </if>
+      <if test="responseParameterType != null" >
+        response_parameter_type = #{responseParameterType,jdbcType=INTEGER},
+      </if>
+      <if test="responseParameterDesc != null" >
+        response_parameter_desc = #{responseParameterDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where response_parameter_id = #{responseParameterId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ApiResponseParameter" >
+    update api_response_parameter
+    set api_id = #{apiId,jdbcType=INTEGER},
+      response_parameter_name = #{responseParameterName,jdbcType=VARCHAR},
+      response_parameter_type = #{responseParameterType,jdbcType=INTEGER},
+      response_parameter_desc = #{responseParameterDesc,jdbcType=VARCHAR},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where response_parameter_id = #{responseParameterId,jdbcType=INTEGER}
+  </update>
+</mapper>

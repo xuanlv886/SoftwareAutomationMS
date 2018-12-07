@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.ModuleUserRelationMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.ModuleUserRelation" >
+    <id column="module_user_relation_id" property="moduleUserRelationId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="project_module_id" property="projectModuleId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    module_user_relation_id, user_id, project_module_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from module_user_relation
+    where module_user_relation_id = #{moduleUserRelationId,jdbcType=INTEGER}
+  </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from module_user_relation
+    where module_user_relation_id = #{moduleUserRelationId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.ModuleUserRelation" >
+    insert into module_user_relation (module_user_relation_id, user_id, project_module_id
+      )
+    values (#{moduleUserRelationId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{projectModuleId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.ModuleUserRelation" >
+    insert into module_user_relation
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="moduleUserRelationId != null" >
+        module_user_relation_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="moduleUserRelationId != null" >
+        #{moduleUserRelationId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        #{projectModuleId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.ModuleUserRelation" >
+    update module_user_relation
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where module_user_relation_id = #{moduleUserRelationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.ModuleUserRelation" >
+    update module_user_relation
+    set user_id = #{userId,jdbcType=INTEGER},
+      project_module_id = #{projectModuleId,jdbcType=INTEGER}
+    where module_user_relation_id = #{moduleUserRelationId,jdbcType=INTEGER}
+  </update>
+  <select id="getAllModuleByUserId" resultType="java.lang.Integer">
+    select count(module_user_relation_id)
+    from module_user_relation
+    where user_id = #{userId,jdbcType=INTEGER}
+    and project_module_id in
+    <foreach close=")" collection="projectModuleIdList" index="index" item="projectModuleId" open="(" separator=",">
+      #{projectModuleId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+</mapper>

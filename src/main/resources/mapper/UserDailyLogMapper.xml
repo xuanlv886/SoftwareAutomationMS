@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.UserDailyLogMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.UserDailyLog" >
+    <id column="daily_log_id" property="dailyLogId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="project_module_id" property="projectModuleId" jdbcType="INTEGER" />
+    <result column="daily_log_content" property="dailyLogContent" jdbcType="VARCHAR" />
+    <result column="daily_log_time" property="dailyLogTime" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    daily_log_id, user_id, project_id, project_module_id, daily_log_content, daily_log_time, 
+    create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user_daily_log
+    where daily_log_id = #{dailyLogId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user_daily_log
+    where daily_log_id = #{dailyLogId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.UserDailyLog" >
+    insert into user_daily_log (daily_log_id, user_id, project_id, 
+      project_module_id, daily_log_content, daily_log_time, 
+      create_time)
+    values (#{dailyLogId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{projectId,jdbcType=INTEGER}, 
+      #{projectModuleId,jdbcType=INTEGER}, #{dailyLogContent,jdbcType=VARCHAR}, #{dailyLogTime,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.UserDailyLog" >
+    insert into user_daily_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="dailyLogId != null" >
+        daily_log_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="projectId != null" >
+        project_id,
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id,
+      </if>
+      <if test="dailyLogContent != null" >
+        daily_log_content,
+      </if>
+      <if test="dailyLogTime != null" >
+        daily_log_time,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="dailyLogId != null" >
+        #{dailyLogId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="dailyLogContent != null" >
+        #{dailyLogContent,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyLogTime != null" >
+        #{dailyLogTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.UserDailyLog" >
+    update user_daily_log
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        project_id = #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="dailyLogContent != null" >
+        daily_log_content = #{dailyLogContent,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyLogTime != null" >
+        daily_log_time = #{dailyLogTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where daily_log_id = #{dailyLogId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.UserDailyLog" >
+    update user_daily_log
+    set user_id = #{userId,jdbcType=INTEGER},
+      project_id = #{projectId,jdbcType=INTEGER},
+      project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      daily_log_content = #{dailyLogContent,jdbcType=VARCHAR},
+      daily_log_time = #{dailyLogTime,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where daily_log_id = #{dailyLogId,jdbcType=INTEGER}
+  </update>
+</mapper>

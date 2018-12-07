@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SoftwareAutomationMS:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47a26b99-1e37-47c5-b488-bc1798ea2973" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.23.0" />
+      </map>
+    </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="autotest@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="autotest@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="858173335">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="3" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="54" />
+          <entry key="groovy" value="3" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="223" />
+          <entry key="jsp" value="1" />
+          <entry key="properties" value="9" />
+          <entry key="sql" value="4" />
+          <entry key="xml" value="148" />
+          <entry key="xsd" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="54" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="JAVA" value="223" />
+          <entry key="JSP" value="1" />
+          <entry key="Properties" value="9" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="6" />
+          <entry key="XML" value="150" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="7" />
+          <entry key="ft" value="96" />
+          <entry key="java" value="15734" />
+          <entry key="properties" value="82" />
+          <entry key="txt" value="8" />
+          <entry key="xml" value="2034" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="15734" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Properties" value="82" />
+          <entry key="SQL" value="70" />
+          <entry key="VTL" value="96" />
+          <entry key="XML" value="1964" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/controller/WebController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3103">
+              <caret line="115" column="36" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/controller/WebControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="456" column="49" selection-start-line="456" selection-start-column="49" selection-end-line="456" selection-end-column="49" />
+              <folding>
+                <element signature="docComment;method#doWebLoginWithUserAccountEmpty#0;class#WebControllerTest#0" />
+                <element signature="method#doWebLoginWithUserAccountEmpty#0;class#WebControllerTest#0" />
+                <element signature="docComment;method#doWebLoginWithUserPasswordEmpty#0;class#WebControllerTest#0" />
+                <element signature="method#doWebLoginWithUserAccountLengthOutOfBounds#0;class#WebControllerTest#0" />
+                <element signature="method#doGetProjectsWithUserIdEmpty#0;class#WebControllerTest#0" />
+                <element signature="method#doGetProjectsWithUserIdNotExist#0;class#WebControllerTest#0" />
+                <element signature="docComment;method#doGetProjectStatistics#0;class#WebControllerTest#0" />
+                <element signature="method#doGetProjectStatistics#0;class#WebControllerTest#0" />
+                <element signature="docComment;method#doGetProjectStatisticsWithProjectIdEmpty#0;class#WebControllerTest#0" />
+                <element signature="method#doGetProjectStatisticsWithProjectIdEmpty#0;class#WebControllerTest#0" />
+                <element signature="method#doGetProjectStatisticsWithProjectIdNotExist#0;class#WebControllerTest#0" />
+                <element signature="method#doGetUserPendingItems#0;class#WebControllerTest#0" />
+                <element signature="method#doGetUserPendingItemsWithUserIdEmpty#0;class#WebControllerTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/impl/WebServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5829">
+              <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#doGetProjects#0;class#WebServiceImpl#0" />
+                <element signature="method#doGetProjectsOverview#0;class#WebServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/WebService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="928">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Singleton" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>javaFileEncoding</find>
+      <find>jdbc</find>
+      <find>mysql</find>
+      <find>slf4j</find>
+      <find>log4</find>
+      <find>log4j</find>
+      <find>encodingFilter</find>
+      <find>com.jie</find>
+      <find>webController</find>
+      <find>annotation</find>
+      <find>autoproxy</find>
+      <find>mappingJacksonHttpMessageConverter</find>
+      <find>jackson</find>
+      <find>user</find>
+      <find>servlet</find>
+      <find>json</find>
+      <find>junit</find>
+      <find>project_lifecycle</find>
+      <find>projectLifecycle</find>
+      <find>plan_actual_result</find>
+      <find>BaseResultMap</find>
+      <find>getTotalBugCount</find>
+      <find>doGetMyJobContent</find>
+      <find>serialVersionUID</find>
+      <find>Desc</find>
+      <find>transform</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/WebLoginContorllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/WebLoginControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/ApiHeaderRelationMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/CrossDomainFilter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/WebServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/controller/WebLoginControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/model/Projects.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/UserPendingItemStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/ProjectStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/TestPlanStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/BugStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/ApiStatus.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/GetProjectStatisticsServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/model/TestPlanUserRelation.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/dao/TestPlanUserRelationMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApiHeaderRelationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApiRequestParameterMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApiResponseParameterMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BugLevelMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/dao/TestPlanMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserPendingItemsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/UserPendingItemsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProjectsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectModuleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProjectModuleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ModuleUserRelationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ModuleUserRelationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/TestPlanMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BugManagementDetailMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/BugManagementDetailMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectUserRelationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProjectUserRelationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TestPlanMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TestPlanUserRelationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/TestPlanUserRelationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/TestPlanUserRelationStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/BugManagementMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BugManagementMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/WebService.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/dao/UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/WebLoginServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/impl/WebServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/controller/WebController.java" />
+        <option value="$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/controller/WebControllerTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.5.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SoftwareAutomationMS" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="339" />
+    <option name="y" value="185" />
+    <option name="width" value="1818" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Ali-Check</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RoomAndroid</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SoftwareAutomationMS" type="58d84e3e:PackageViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="58d84e3e:PackageViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="616d4139:PackageViewModuleNode" />
+              <item name="cn.lzy.server.softwareautomationms" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="softwareautomationms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="softwareautomationms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="softwareautomationms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="SoftwareAutomationMS" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lzy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="softwareautomationms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SoftwareAutomationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="softwareautomationms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareAutomationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareAutomationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="softwareautomationms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="F:/SDK" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543659140271" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cn.lzy.server.softwareautomationms.controller" />
+      <recent name="cn.lzy.server.softwareautomationms.dao" />
+      <recent name="cn.lzy.server.softwareautomationms.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.lzy.server.softwareautomationms.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\SoftwareAutomationMS\src\main\webapp" />
+      <recent name="E:\IdeaProjects\SoftwareAutomationMS\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 7 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 7 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="SoftwareAutomationMS" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.WebControllerTest.doGetUserPendingItemsWithPageSizeEmpty">
+    <configuration name="UserMapperTest.deleteByPrimaryKey" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.dao" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.dao.UserMapperTest" />
+      <option name="METHOD_NAME" value="deleteByPrimaryKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerTest.doGetUserPendingItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.controller" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.controller.WebControllerTest" />
+      <option name="METHOD_NAME" value="doGetUserPendingItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerTest.doGetUserPendingItemsWithCurrentPageEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.controller" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.controller.WebControllerTest" />
+      <option name="METHOD_NAME" value="doGetUserPendingItemsWithCurrentPageEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerTest.doGetUserPendingItemsWithCurrentPageIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.controller" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.controller.WebControllerTest" />
+      <option name="METHOD_NAME" value="doGetUserPendingItemsWithCurrentPageIsZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerTest.doGetUserPendingItemsWithPageSizeEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.controller" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.controller.WebControllerTest" />
+      <option name="METHOD_NAME" value="doGetUserPendingItemsWithPageSizeEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerTest.doGetUserPendingItemsWithUserIdEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareAutomationMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.server.softwareautomationms.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy.server.softwareautomationms.controller" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.server.softwareautomationms.controller.WebControllerTest" />
+      <option name="METHOD_NAME" value="doGetUserPendingItemsWithUserIdEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorMapper" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="SoftwareAutomationMS" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SoftwareAutomationMS:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SoftwareAutomationMS" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54470" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SoftwareAutomationMS:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.GeneratorMapper" />
+      <item itemvalue="Tomcat Server.SoftwareAutomationMS" />
+      <item itemvalue="JUnit.UserMapperTest.deleteByPrimaryKey" />
+      <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItems" />
+      <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithUserIdEmpty" />
+      <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithCurrentPageEmpty" />
+      <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithCurrentPageIsZero" />
+      <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithPageSizeEmpty" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithPageSizeEmpty" />
+        <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithCurrentPageIsZero" />
+        <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithCurrentPageEmpty" />
+        <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItemsWithUserIdEmpty" />
+        <item itemvalue="JUnit.WebControllerTest.doGetUserPendingItems" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47a26b99-1e37-47c5-b488-bc1798ea2973" name="Default Changelist" comment="" />
+      <created>1542779580810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542779580810</updated>
+      <workItem from="1542779582409" duration="17468000" />
+      <workItem from="1542847224592" duration="25729000" />
+      <workItem from="1542934361905" duration="10725000" />
+      <workItem from="1542952862495" duration="1944000" />
+      <workItem from="1542954871467" duration="5798000" />
+      <workItem from="1543020250400" duration="2630000" />
+      <workItem from="1543192882629" duration="13976000" />
+      <workItem from="1543279760736" duration="19333000" />
+      <workItem from="1543365973476" duration="22885000" />
+      <workItem from="1543452435501" duration="1198000" />
+      <workItem from="1543546390493" duration="8851000" />
+      <workItem from="1543629379466" duration="13972000" />
+      <workItem from="1543905804456" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="WebControllerTest_doGetProjectsWithUserIdNotExist - 2018.12.01 at 13h 43m 39s.xml">
+      <configuration name="WebControllerTest.doGetProjectsWithUserIdNotExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetProjectStatisticsWithProjectIdNotExist - 2018.12.01 at 13h 49m 56s.xml">
+      <configuration name="WebControllerTest.doGetProjectStatisticsWithProjectIdNotExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetProjectStatisticsWithProjectIdNotExist - 2018.12.01 at 13h 50m 37s.xml">
+      <configuration name="WebControllerTest.doGetProjectStatisticsWithProjectIdNotExist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItems - 2018.12.01 at 13h 58m 48s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doWebLogin - 2018.12.01 at 14h 00m 35s.xml">
+      <configuration name="WebControllerTest.doWebLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItems - 2018.12.01 at 14h 01m 51s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItemsWithUserIdEmpty - 2018.12.01 at 14h 07m 32s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItemsWithUserIdEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItemsWithCurrentPageEmpty - 2018.12.01 at 14h 07m 39s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItemsWithCurrentPageEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItemsWithCurrentPageIsZero - 2018.12.01 at 14h 09m 21s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItemsWithCurrentPageIsZero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebControllerTest_doGetUserPendingItemsWithPageSizeEmpty - 2018.12.01 at 14h 10m 35s.xml">
+      <configuration name="WebControllerTest.doGetUserPendingItemsWithPageSizeEmpty" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="144564000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23187633" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="16" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.329718" />
+      <window_info anchor="bottom" id="Tail" order="18" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" weight="0.14498934" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="RestServices" order="10" weight="0.14552239" />
+      <window_info anchor="right" id="CDI" order="11" weight="0.32995737" />
+      <window_info anchor="right" id="Bean Validation" order="12" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectModuleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProjectsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProjectModuleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="138" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ModuleUserRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ModuleUserRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/BugManagementDetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BugManagementDetailMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="157" column="4" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="159" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProjectUserRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ProjectUserRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Function.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/collect/Lists.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TestPlanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TestPlanUserRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="174" column="46" lean-forward="true" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/TestPlanUserRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="62" column="49" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/TestPlanUserRelationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BugManagementMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="224" column="33" selection-start-line="224" selection-start-column="14" selection-end-line="224" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/BugManagementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/collect/ImmutableMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/collect/Maps.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2668">
+          <caret line="152" column="39" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/JAVA/jdk/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="1589" column="25" selection-start-line="1589" selection-start-column="25" selection-end-line="1589" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ApiResponseParameterMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApiRequestParameterMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="118" column="10" lean-forward="true" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/enterprise/inject/Decorated.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/faces/flow/builder/FlowDefinition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/enterprise/context/ConversationScoped.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/JSON-Groovy.json.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-696" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations-java5/16.0.3/annotations-java5-16.0.3.jar!/org/jetbrains/annotations/Nullable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/dao/TestPlanMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/model/ApiHeaderRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ApiRequestParameterMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/TestPlanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/ApiHeaderRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/JAVA/jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Platform.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Strings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Present.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/dao/UserMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Optional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/service/WebLoginServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/controller/WebLoginControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="185" column="25" selection-start-line="185" selection-start-column="25" selection-end-line="185" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/controller/WebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3103">
+          <caret line="115" column="36" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/impl/WebServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5829">
+          <caret line="236" column="13" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doGetProjects#0;class#WebServiceImpl#0" />
+            <element signature="method#doGetProjectsOverview#0;class#WebServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lzy/server/softwareautomationms/service/WebService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/cn/lzy/server/softwareautomationms/controller/WebControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="456" column="49" selection-start-line="456" selection-start-column="49" selection-end-line="456" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;method#doWebLoginWithUserAccountEmpty#0;class#WebControllerTest#0" />
+            <element signature="method#doWebLoginWithUserAccountEmpty#0;class#WebControllerTest#0" />
+            <element signature="docComment;method#doWebLoginWithUserPasswordEmpty#0;class#WebControllerTest#0" />
+            <element signature="method#doWebLoginWithUserAccountLengthOutOfBounds#0;class#WebControllerTest#0" />
+            <element signature="method#doGetProjectsWithUserIdEmpty#0;class#WebControllerTest#0" />
+            <element signature="method#doGetProjectsWithUserIdNotExist#0;class#WebControllerTest#0" />
+            <element signature="docComment;method#doGetProjectStatistics#0;class#WebControllerTest#0" />
+            <element signature="method#doGetProjectStatistics#0;class#WebControllerTest#0" />
+            <element signature="docComment;method#doGetProjectStatisticsWithProjectIdEmpty#0;class#WebControllerTest#0" />
+            <element signature="method#doGetProjectStatisticsWithProjectIdEmpty#0;class#WebControllerTest#0" />
+            <element signature="method#doGetProjectStatisticsWithProjectIdNotExist#0;class#WebControllerTest#0" />
+            <element signature="method#doGetUserPendingItems#0;class#WebControllerTest#0" />
+            <element signature="method#doGetUserPendingItemsWithUserIdEmpty#0;class#WebControllerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SoftwareAutomationMS:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SoftwareAutomationMS</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

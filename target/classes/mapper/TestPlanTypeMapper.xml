@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.TestPlanTypeMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.TestPlanType" >
+    <id column="plan_type_id" property="planTypeId" jdbcType="INTEGER" />
+    <result column="plan_type_name" property="planTypeName" jdbcType="VARCHAR" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    plan_type_id, plan_type_name, create_by_user, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from test_plan_type
+    where plan_type_id = #{planTypeId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from test_plan_type
+    where plan_type_id = #{planTypeId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanType" >
+    insert into test_plan_type (plan_type_id, plan_type_name, create_by_user, 
+      create_time, update_time)
+    values (#{planTypeId,jdbcType=INTEGER}, #{planTypeName,jdbcType=VARCHAR}, #{createByUser,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanType" >
+    insert into test_plan_type
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="planTypeId != null" >
+        plan_type_id,
+      </if>
+      <if test="planTypeName != null" >
+        plan_type_name,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="planTypeId != null" >
+        #{planTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="planTypeName != null" >
+        #{planTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanType" >
+    update test_plan_type
+    <set >
+      <if test="planTypeName != null" >
+        plan_type_name = #{planTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where plan_type_id = #{planTypeId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.TestPlanType" >
+    update test_plan_type
+    set plan_type_name = #{planTypeName,jdbcType=VARCHAR},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where plan_type_id = #{planTypeId,jdbcType=INTEGER}
+  </update>
+</mapper>

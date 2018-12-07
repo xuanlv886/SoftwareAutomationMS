@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.TestPlanMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.TestPlan" >
+    <id column="plan_id" property="planId" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="project_module_id" property="projectModuleId" jdbcType="INTEGER" />
+    <result column="plan_name" property="planName" jdbcType="VARCHAR" />
+    <result column="plan_content" property="planContent" jdbcType="VARCHAR" />
+    <result column="plan_required" property="planRequired" jdbcType="VARCHAR" />
+    <result column="plan_result" property="planResult" jdbcType="VARCHAR" />
+    <result column="plan_status" property="planStatus" jdbcType="INTEGER" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    plan_id, project_id, project_module_id, plan_name, plan_content, plan_required, plan_result, 
+    plan_status, create_by_user, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from test_plan
+    where plan_id = #{planId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from test_plan
+    where plan_id = #{planId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.TestPlan" >
+    insert into test_plan (plan_id, project_id, project_module_id, 
+      plan_name, plan_content, plan_required, 
+      plan_result, plan_status, create_by_user, 
+      create_time, update_time)
+    values (#{planId,jdbcType=INTEGER}, #{projectId,jdbcType=INTEGER}, #{projectModuleId,jdbcType=INTEGER}, 
+      #{planName,jdbcType=VARCHAR}, #{planContent,jdbcType=VARCHAR}, #{planRequired,jdbcType=VARCHAR}, 
+      #{planResult,jdbcType=VARCHAR}, #{planStatus,jdbcType=INTEGER}, #{createByUser,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlan" >
+    insert into test_plan
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="planId != null" >
+        plan_id,
+      </if>
+      <if test="projectId != null" >
+        project_id,
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id,
+      </if>
+      <if test="planName != null" >
+        plan_name,
+      </if>
+      <if test="planContent != null" >
+        plan_content,
+      </if>
+      <if test="planRequired != null" >
+        plan_required,
+      </if>
+      <if test="planResult != null" >
+        plan_result,
+      </if>
+      <if test="planStatus != null" >
+        plan_status,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="planId != null" >
+        #{planId,jdbcType=INTEGER},
+      </if>
+      <if test="projectId != null" >
+        #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="planName != null" >
+        #{planName,jdbcType=VARCHAR},
+      </if>
+      <if test="planContent != null" >
+        #{planContent,jdbcType=VARCHAR},
+      </if>
+      <if test="planRequired != null" >
+        #{planRequired,jdbcType=VARCHAR},
+      </if>
+      <if test="planResult != null" >
+        #{planResult,jdbcType=VARCHAR},
+      </if>
+      <if test="planStatus != null" >
+        #{planStatus,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.TestPlan" >
+    update test_plan
+    <set >
+      <if test="projectId != null" >
+        project_id = #{projectId,jdbcType=INTEGER},
+      </if>
+      <if test="projectModuleId != null" >
+        project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      </if>
+      <if test="planName != null" >
+        plan_name = #{planName,jdbcType=VARCHAR},
+      </if>
+      <if test="planContent != null" >
+        plan_content = #{planContent,jdbcType=VARCHAR},
+      </if>
+      <if test="planRequired != null" >
+        plan_required = #{planRequired,jdbcType=VARCHAR},
+      </if>
+      <if test="planResult != null" >
+        plan_result = #{planResult,jdbcType=VARCHAR},
+      </if>
+      <if test="planStatus != null" >
+        plan_status = #{planStatus,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where plan_id = #{planId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.TestPlan" >
+    update test_plan
+    set project_id = #{projectId,jdbcType=INTEGER},
+      project_module_id = #{projectModuleId,jdbcType=INTEGER},
+      plan_name = #{planName,jdbcType=VARCHAR},
+      plan_content = #{planContent,jdbcType=VARCHAR},
+      plan_required = #{planRequired,jdbcType=VARCHAR},
+      plan_result = #{planResult,jdbcType=VARCHAR},
+      plan_status = #{planStatus,jdbcType=INTEGER},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where plan_id = #{planId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByProjectId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from test_plan
+    where project_id = #{projectId,jdbcType=INTEGER}
+    and plan_status not in (#{notActive,jdbcType=INTEGER},
+    #{abandoned,jdbcType=INTEGER})
+  </select>
+  <select id="getAllTestPlanByStatus" resultType="java.lang.Integer">
+    select count(plan_id)
+    from test_plan
+    where plan_status = #{planStatus,jdbcType=INTEGER}
+  </select>
+  <select id="getAllTestPlanByProjectIdList" parameterType="java.util.List" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from test_plan
+    where plan_status not in (#{notActive,jdbcType=INTEGER},
+    #{abandoned,jdbcType=INTEGER})
+    and project_id in
+    <foreach close=")" collection="projectIdList" index="index" item="projectId" open="(" separator=",">
+      #{projectId,jdbcType=INTEGER}
+    </foreach>
+  </select>
+</mapper>

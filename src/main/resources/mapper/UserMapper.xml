@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lzy.server.softwareautomationms.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="cn.lzy.server.softwareautomationms.model.User" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_role_id" property="userRoleId" jdbcType="INTEGER" />
+    <result column="user_account" property="userAccount" jdbcType="VARCHAR" />
+    <result column="user_password" property="userPassword" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_sex" property="userSex" jdbcType="INTEGER" />
+    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
+    <result column="user_leader" property="userLeader" jdbcType="INTEGER" />
+    <result column="user_last_login_time" property="userLastLoginTime" jdbcType="TIMESTAMP" />
+    <result column="user_visit_count" property="userVisitCount" jdbcType="INTEGER" />
+    <result column="create_by_user" property="createByUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, user_role_id, user_account, user_password, user_name, user_sex, user_phone, 
+    user_email, user_leader, user_last_login_time, user_visit_count, create_by_user, 
+    create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.lzy.server.softwareautomationms.model.User" useGeneratedKeys="true" keyProperty="userId">
+    insert into user (user_id, user_role_id, user_account, 
+      user_password, user_name, user_sex, 
+      user_phone, user_email, user_leader, 
+      user_last_login_time, user_visit_count, create_by_user, 
+      create_time, update_time)
+    values (#{userId,jdbcType=INTEGER}, #{userRoleId,jdbcType=INTEGER}, #{userAccount,jdbcType=VARCHAR}, 
+      #{userPassword,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{userSex,jdbcType=INTEGER}, 
+      #{userPhone,jdbcType=VARCHAR}, #{userEmail,jdbcType=VARCHAR}, #{userLeader,jdbcType=INTEGER}, 
+      #{userLastLoginTime,jdbcType=TIMESTAMP}, #{userVisitCount,jdbcType=INTEGER}, #{createByUser,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.lzy.server.softwareautomationms.model.User" useGeneratedKeys="true" keyProperty="userId">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userRoleId != null" >
+        user_role_id,
+      </if>
+      <if test="userAccount != null" >
+        user_account,
+      </if>
+      <if test="userPassword != null" >
+        user_password,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="userSex != null" >
+        user_sex,
+      </if>
+      <if test="userPhone != null" >
+        user_phone,
+      </if>
+      <if test="userEmail != null" >
+        user_email,
+      </if>
+      <if test="userLeader != null" >
+        user_leader,
+      </if>
+      <if test="userLastLoginTime != null" >
+        user_last_login_time,
+      </if>
+      <if test="userVisitCount != null" >
+        user_visit_count,
+      </if>
+      <if test="createByUser != null" >
+        create_by_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userRoleId != null" >
+        #{userRoleId,jdbcType=INTEGER},
+      </if>
+      <if test="userAccount != null" >
+        #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null" >
+        #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userSex != null" >
+        #{userSex,jdbcType=INTEGER},
+      </if>
+      <if test="userPhone != null" >
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null" >
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userLeader != null" >
+        #{userLeader,jdbcType=INTEGER},
+      </if>
+      <if test="userLastLoginTime != null" >
+        #{userLastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userVisitCount != null" >
+        #{userVisitCount,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.lzy.server.softwareautomationms.model.User" >
+    update user
+    <set >
+      <if test="userRoleId != null" >
+        user_role_id = #{userRoleId,jdbcType=INTEGER},
+      </if>
+      <if test="userAccount != null" >
+        user_account = #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null" >
+        user_password = #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userSex != null" >
+        user_sex = #{userSex,jdbcType=INTEGER},
+      </if>
+      <if test="userPhone != null" >
+        user_phone = #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null" >
+        user_email = #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userLeader != null" >
+        user_leader = #{userLeader,jdbcType=INTEGER},
+      </if>
+      <if test="userLastLoginTime != null" >
+        user_last_login_time = #{userLastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userVisitCount != null" >
+        user_visit_count = #{userVisitCount,jdbcType=INTEGER},
+      </if>
+      <if test="createByUser != null" >
+        create_by_user = #{createByUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.lzy.server.softwareautomationms.model.User" >
+    update user
+    set user_role_id = #{userRoleId,jdbcType=INTEGER},
+      user_account = #{userAccount,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_sex = #{userSex,jdbcType=INTEGER},
+      user_phone = #{userPhone,jdbcType=VARCHAR},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      user_leader = #{userLeader,jdbcType=INTEGER},
+      user_last_login_time = #{userLastLoginTime,jdbcType=TIMESTAMP},
+      user_visit_count = #{userVisitCount,jdbcType=INTEGER},
+      create_by_user = #{createByUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByAccountAndPassword" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where user_account = #{userAccount,jdbcType=VARCHAR}
+    and user_password = #{userPassword,jdbcType=VARCHAR}
+  </select>
+</mapper>

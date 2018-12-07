@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<!-- 配置生成器 -->
+<generatorConfiguration>
+    <!-- mysql-jdbc驱动地址 -->
+    <classPathEntry location="D:/mysql-connector-java-5.1.38.jar"/>
+    <context id="context" targetRuntime="MyBatis3">
+        <!-- 生成的代码的注释的规则 -->
+        <commentGenerator>
+            <!-- suppressAllComments  false时打开注释，true时关闭注释 -->
+            <property name="suppressAllComments" value="true"/>
+            <!-- suppressDate  false时打开时间标志，true时关闭 -->
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!-- 数据库配置 -->
+        <jdbcConnection
+                driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://localhost:3366/autotest"
+                userId="root"
+                password="123456"/>
+        <!-- mybatis里专门用来处理NUMERIC和DECIMAL类型的策略 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 模型、实体类生成配置 -->
+        <javaModelGenerator
+                targetPackage="cn.lzy.server.softwareautomationms.model"
+                targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- 生成sql语句的xml文件的配置
+                在mybatis2里是必须的，在mybatis3中，只有用XML方式的时候才是需要的。-->
+        <sqlMapGenerator
+                targetPackage="mapper"
+                targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!-- dao生成配置  type XMLMAPPER配置文件方式，ANNOTATEDMAPPER注解方式-->
+        <javaClientGenerator
+                targetPackage="cn.lzy.server.softwareautomationms.dao"
+                targetProject="src/main/java"
+                type="XMLMAPPER">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!-- 数据表配置 -->
+        <!-- HTTP接口关联请求头表 -->
+        <table tableName="api_header_relation"
+               domainObjectName="ApiHeaderRelation"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- HTTP请求头表 -->
+        <table tableName="http_headers"
+               domainObjectName="HttpHeaders"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 接口请求参数表 -->
+        <table tableName="api_request_parameter"
+               domainObjectName="ApiRequestParameter"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 接口请求响应参数表 -->
+        <table tableName="api_response_parameter"
+               domainObjectName="ApiResponseParameter"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 模块关联用户表 -->
+        <table tableName="module_user_relation"
+               domainObjectName="ModuleUserRelation"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 测试计划关联用户表 -->
+        <table tableName="test_plan_user_relation"
+               domainObjectName="TestPlanUserRelation"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 测试计划大类表 -->
+        <table tableName="test_plan_type"
+               domainObjectName="TestPlanType"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 测试计划小类表 -->
+        <table tableName="test_plan_type_detail"
+               domainObjectName="TestPlanTypeDetail"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 测试计划模版表 -->
+        <table tableName="test_plan_template"
+               domainObjectName="TestPlanTemplate"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 测试计划表 -->
+        <table tableName="test_plan"
+               domainObjectName="TestPlan"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 用户工作日志表 -->
+        <table tableName="user_daily_log"
+               domainObjectName="UserDailyLog"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 用户待办事项表 -->
+        <table tableName="user_pending_items"
+               domainObjectName="UserPendingItems"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 用户表 -->
+        <table tableName="user"
+               domainObjectName="User"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 用户角色表 -->
+        <table tableName="user_role"
+               domainObjectName="UserRole"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 系统操作日志主表 -->
+        <table tableName="system_operation_log"
+               domainObjectName="SystemOperationLog"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 系统操作日志从表 -->
+        <table tableName="system_operation_log_detail"
+               domainObjectName="SystemOperationLogDetail"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 缺陷优先级表 -->
+        <table tableName="bug_priority"
+               domainObjectName="BugPriority"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 缺陷等级表 -->
+        <table tableName="bug_level"
+               domainObjectName="BugLevel"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 缺陷管理从表 -->
+        <table tableName="bug_management_detail"
+               domainObjectName="BugManagementDetail"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 缺陷管理表 -->
+        <table tableName="bug_management"
+               domainObjectName="BugManagement"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 表业务说明 -->
+        <table tableName="table_comment"
+               domainObjectName="TableComment"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 表字段业务说明 -->
+        <table tableName="table_field_comment"
+               domainObjectName="TableFieldComment"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目关联用户表 -->
+        <table tableName="project_user_relation"
+               domainObjectName="ProjectUserRelation"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目接口表 -->
+        <table tableName="project_apis"
+               domainObjectName="ProjectApis"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目文档表 -->
+        <table tableName="project_docs"
+               domainObjectName="ProjectDocs"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目时间节点表 -->
+        <table tableName="project_time_management"
+               domainObjectName="ProjectTimeManagement"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目模块表 -->
+        <table tableName="project_module"
+               domainObjectName="ProjectModule"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+        <!-- 项目表 -->
+        <table tableName="projects"
+               domainObjectName="Projects"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+    </context>
+</generatorConfiguration>
